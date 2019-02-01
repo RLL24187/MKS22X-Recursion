@@ -23,6 +23,55 @@ public class driver{
     System.out.println("Sqrt(6): "+recursion.sqrt(6, 0.00004));
     System.out.println("Math.sqrt(6): "+Math.sqrt(6));
 
-
+    System.out.println("\n\nTesting fib\n");
+    System.out.println("fib(1)"+recursion.fib(1));
+    System.out.println("fib(2)"+recursion.fib(2));
+    System.out.println("fib(3)"+recursion.fib(3));
+    System.out.println("fib(4)"+recursion.fib(4));
+    System.out.println("fib(5)"+recursion.fib(5));
+    System.out.println("fib(6)"+recursion.fib(6));
+    System.out.println("fib(7)"+recursion.fib(7));
+    System.out.println("fib(8)"+recursion.fib(8));
+    System.out.println("fib(9)"+recursion.fib(9));
+    System.out.println("fib(10)"+recursion.fib(10));
+    System.out.println("fib(11)"+recursion.fib(11));
+    System.out.println("fib(12)"+recursion.fib(12));
+    System.out.println("fib(13)"+recursion.fib(13));
+    System.out.println("fib(14)"+recursion.fib(14));
+    System.out.println("fib(15)"+recursion.fib(15));
+    System.out.println("fib(16)"+recursion.fib(16));
+    System.out.println("fib(17)"+recursion.fib(17));
+    System.out.println("fib(18)"+recursion.fib(18));
+    System.out.println("fib(19)"+recursion.fib(19));
+    System.out.println("fib(20)"+recursion.fib(20));
+    System.out.println("fib(21)"+recursion.fib(21));
+    System.out.println("fib(22)"+recursion.fib(22));
+    System.out.println("fib(23)"+recursion.fib(23));
+    System.out.println("fib(24)"+recursion.fib(24));
+    System.out.println("fib(25)"+recursion.fib(25));
+    System.out.println("fib(26)"+recursion.fib(26));
+    System.out.println("fib(27)"+recursion.fib(27));
+    System.out.println("fib(28)"+recursion.fib(28));
+    System.out.println("fib(29)"+recursion.fib(29));
+    System.out.println("fib(30)"+recursion.fib(30));
+    System.out.println("fib(31)"+recursion.fib(31));
+    System.out.println("fib(32)"+recursion.fib(32));
+    System.out.println("fib(33)"+recursion.fib(33));
+    System.out.println("fib(34)"+recursion.fib(34));
+    System.out.println("fib(35)"+recursion.fib(35));
+    System.out.println("fib(36)"+recursion.fib(36));
+    System.out.println("fib(37)"+recursion.fib(37));
+    System.out.println("fib(38)"+recursion.fib(38));
+    System.out.println("fib(39)"+recursion.fib(39));
+    System.out.println("fib(40)"+recursion.fib(40));
+    System.out.println("fib(41)"+recursion.fib(41));
+    System.out.println("fib(42)"+recursion.fib(42));
+    System.out.println("fib(43)"+recursion.fib(43));
+    System.out.println("fib(44)"+recursion.fib(44));
+    System.out.println("fib(45)"+recursion.fib(45));
+    System.out.println("fib(46)"+recursion.fib(46));
+    System.out.println("fib(47)"+recursion.fib(47));
+    System.out.println("fib(48)"+recursion.fib(48));
+    System.out.println("fib(49)"+recursion.fib(49));
   }
 }
