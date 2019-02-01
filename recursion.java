@@ -76,17 +76,21 @@ public class recursion{
     return L;
   }
 
+  //My own exponent function
   private static int exp(int base, int exp){
     if (exp == 0){
       return 1;
     }
     return exp(base*base, exp - 1);
   }
+
   private static void makeAllSumsHelper(int n, int ans, ArrayList<Integer> sums){
-    //Base case: n == 0
+    //Base case: n == 0, don't add anything
     if (n!=0){
+      //Add the two sums to the the list
       sums.add(ans+n);
       sums.add(ans);
+      //call the recursive on both results
       makeAllSumsHelper(n-1, ans, sums);
       makeAllSumsHelper(n-1, ans+n, sums);
     }
