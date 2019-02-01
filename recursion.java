@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class recursion{
   /**Uses the Newton's approximation to recursively find the square root
  *@param n any non-negative value you want to take the sqrt of
@@ -57,9 +58,12 @@ public class recursion{
    *precondition: n is non-negative
    */
   public static int fib(int n){
+    return 0;
   }
 
   /*As Per classwork*/
   public static ArrayList<Integer> makeAllSums(){
+    ArrayList L = new ArrayList(10);
+    return L;
   }
 }
