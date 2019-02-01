@@ -73,5 +73,11 @@ public class driver{
     System.out.println("fib(47)"+recursion.fib(47));
     System.out.println("fib(48)"+recursion.fib(48));
     System.out.println("fib(49)"+recursion.fib(49));
+
+    System.out.println("\n\nTesting makeAllSums\n");
+    System.out.println("makeAllSums(0)"+recursion.makeAllSums(0));
+    System.out.println("makeAllSums(1)"+recursion.makeAllSums(1));
+    System.out.println("makeAllSums(2)"+recursion.makeAllSums(2));
+    System.out.println("makeAllSums(3)"+recursion.makeAllSums(3));
   }
 }
