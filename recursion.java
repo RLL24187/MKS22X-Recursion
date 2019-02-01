@@ -3,16 +3,21 @@ public class recursion{
  *@param n any non-negative value you want to take the sqrt of
  *@return the approximate sqrt of n within a tolerance of 0.001%
  */
-  public static double sqrt(double n){
+  private static double sqrt(double n){
     return guess(n, 1);
   }
 
-  public static double guess(double n, double g){
+  /*
+  
+  */
+  private static double guess(double n, double g){
+    //Base cases
     if (n==0) return 0; //handles case of 0
     if (g*g < n * 1.00001 //0.001%
     &&  g*g > n * 0.99999){
       return g;
     }
+    //recursive part
     return guess(n, (n/g + g)/2);
   }
 
@@ -27,8 +32,16 @@ public class recursion{
     return guess(n, 1, tolerance);
   }
 
+  //Helper function
   private static double guess(double n, double g, double tolerance){
-    
+    //Base cases
+    if (n==0) return 0; //handles case of 0
+    if (g*g < n * 1+tolerance //tolerance
+    &&  g*g > n * 1-tolerance){
+      return g;
+    }
+    //recursive part
+    return guess(n, (n/g + g)/2);
   }
 
   /*Recursively find the n'th fibbonaci number in linear time
