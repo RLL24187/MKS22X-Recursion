@@ -71,12 +71,19 @@ public class recursion{
 
   /*As Per classwork*/
   public static ArrayList<Integer> makeAllSums(int n){
-    ArrayList L = new ArrayList(n*n);
-
+    ArrayList L = new ArrayList(Math.pow(2, n));
+    makeAllSumsHelper(n, 0, L);
     return L;
   }
 
-  private static ArrayList<Integer> makeAllSums(int n, int sum){
-    
+  private static void makeAllSumsHelper(int n, int ans, ArrayList<Integer> sums){
+    //Base case: n == 0
+    if (n==0){
+      return sums;
+    }
+    sums.add(ans+n);
+    sums.add(ans);
+    makeAllSumsHelper(n-1, ans, sums);
+    makeAllSumsHelper(n-1, ans+n, sums);
   }
 }
