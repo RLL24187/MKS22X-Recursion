@@ -1,5 +1,5 @@
 public class recursion{
-  /*
+  /**Uses the Newton's approximation to recursively find the square root
  *@param n any non-negative value you want to take the sqrt of
  *@return the approximate sqrt of n within a tolerance of 0.001%
  */
@@ -7,8 +7,10 @@ public class recursion{
     return guess(n, 1);
   }
 
-  /*
-  
+  /**Helper function for sqrt with 1 param
+  *@param n any non-negative value to sqrt
+  *@param g a guess for the square root of n
+  *@return g when the square of g is within a 0.001% error margin and guess(n, (n/g+g)/2) if not
   */
   private static double guess(double n, double g){
     //Base cases
@@ -23,16 +25,22 @@ public class recursion{
 
   /*You may write additional private methods */
 
-    /*Recursively find the sqrt using Newton's approximation
-     *tolerance is the allowed percent error the squared answer is away from n.
+    /**Recursively find the sqrt using Newton's approximation
+     *@param n is the number to approximate the sqrt of
+     *@param tolerance is the allowed percent error the squared answer is away from n.
      *precondition: n is non-negative
-
+     *@return an approximate square root of n
     */
   public static double sqrt(double n, double tolerance){
     return guess(n, 1, tolerance);
   }
 
-  //Helper function
+  /**Helper function for sqrt with 2 params
+  *@param n any non-negative value to sqrt
+  *@param g a guess for the square root of n
+  *@param tolerance is the allowed percent error the squared answer is away from n
+  *@return g when the square of g is within the tolerance error margin and guess(n, (n/g+g)/2, tolerance) if not
+  */
   private static double guess(double n, double g, double tolerance){
     //Base cases
     if (n==0) return 0; //handles case of 0
