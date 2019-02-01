@@ -58,7 +58,15 @@ public class recursion{
    *precondition: n is non-negative
    */
   public static int fib(int n){
-    return 0;
+    if (n==1|n==2) return 1;
+    return helpFib(n,1,1);
+  }
+
+  private static int helpFib(int n, int term1, int term2){
+    if (n==2){
+      return term2;
+    }
+    return (helpFib(n-1,term2,term2+term1));
   }
 
   /*As Per classwork*/
