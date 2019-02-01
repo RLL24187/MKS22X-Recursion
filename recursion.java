@@ -70,8 +70,13 @@ public class recursion{
   }
 
   /*As Per classwork*/
-  public static ArrayList<Integer> makeAllSums(){
-    ArrayList L = new ArrayList(10);
+  public static ArrayList<Integer> makeAllSums(int n){
+    ArrayList L = new ArrayList(n*n);
+
     return L;
+  }
+
+  private static ArrayList<Integer> makeAllSums(int n, int sum){
+    
   }
 }
