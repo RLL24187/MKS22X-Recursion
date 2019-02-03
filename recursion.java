@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Recursion{
+public class recursion{
   /**Uses the Newton's approximation to recursively find the square root
  *@param n any non-negative value you want to take the sqrt of
  *@return the approximate sqrt of n within a tolerance of 0.001%
