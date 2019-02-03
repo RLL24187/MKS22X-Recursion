@@ -89,9 +89,9 @@ public class recursion{
     //Base case: n == 0, stop and add everything to sums
     if (n!=0){
       //Add the two sums to the the list
-      System.out.println("Ans: "+ans);
-      System.out.println("Ans+n: "+(ans+n));
-      System.out.println(n);
+      //System.out.println("Ans: "+ans);
+      //System.out.println("Ans+n: "+(ans+n));
+      //System.out.println(n);
       //call the recursive on both results
       makeAllSumsHelper(n-1, ans, sums);
       makeAllSumsHelper(n-1, ans+n, sums);
