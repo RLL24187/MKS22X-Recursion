@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class driver{
   public static void main(String[] args){
     //Testing Square Root
@@ -75,9 +76,9 @@ public class driver{
     System.out.println("fib(49)"+recursion.fib(49));
 
     System.out.println("\n\nTesting makeAllSums\n");
-    System.out.println("makeAllSums(0)"+recursion.makeAllSums(0));
-    System.out.println("makeAllSums(1)"+recursion.makeAllSums(1));
-    System.out.println("makeAllSums(2)"+recursion.makeAllSums(2));
-    System.out.println("makeAllSums(3)"+recursion.makeAllSums(3));
+    System.out.println("makeAllSums(0)"+recursion.makeAllSums(0).toString());
+    System.out.println("makeAllSums(1)"+recursion.makeAllSums(1).toString());
+    System.out.println("makeAllSums(2)"+recursion.makeAllSums(2).toString());
+    System.out.println("makeAllSums(3)"+recursion.makeAllSums(3).toString());
   }
 }
