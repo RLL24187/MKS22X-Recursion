@@ -25,6 +25,7 @@ public class driver{
     System.out.println("Math.sqrt(6): "+Math.sqrt(6));
 
     System.out.println("\n\nTesting fib\n");
+    System.out.println("fib(0)"+recursion.fib(0));
     System.out.println("fib(1)"+recursion.fib(1));
     System.out.println("fib(2)"+recursion.fib(2));
     System.out.println("fib(3)"+recursion.fib(3));
