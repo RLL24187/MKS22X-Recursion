@@ -85,14 +85,30 @@ public class recursion{
   }
 
   private static void makeAllSumsHelper(int n, int ans, ArrayList<Integer> sums){
-    //Base case: n == 0, don't add anything
+    //Base case: n == 0, stop and add everything to sums
     if (n!=0){
       //Add the two sums to the the list
-      sums.add(ans+n);
-      sums.add(ans);
+      System.out.println("Ans: "+ans);
+      System.out.println("Ans+n: "+(ans+n));
+      System.out.println(n);
       //call the recursive on both results
       makeAllSumsHelper(n-1, ans, sums);
       makeAllSumsHelper(n-1, ans+n, sums);
+    }
+    else{
+      //makeAllSums(0)-->0
+      //makeAllSums(1)-->1,0
+      //makeAllSums(2)-->2, 0, 1, 0
+      //                          (2,0)
+      //split into      (1,2)            (1,0)
+      //split into (0,2)  (0,3)     (0,0)     (0,1)
+      //makeAllSums(3)-->0, 3, 2, 5, 1, 4, 3, 6
+      /*                                    (3, 0)
+      split into                    (2, 3)           (2, 0)
+      split into            (1, 3)       (1, 5)  (1, 2)        (1, 0)
+      split into        (0, 3) (0, 4) (0, 5) (0, 6) (0, 2) (0, 3) (0, 1) (0, 0)  //base case (n==0)
+      */
+      sums.add(ans);
     }
   }
 }
